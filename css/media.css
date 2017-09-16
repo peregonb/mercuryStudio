@@ -16,11 +16,14 @@
     .header-menu ul {
         flex-direction: column;
     }
-    .header-menu {
+    .header-menu > li > a {
+    color: black;
+}
+.header-menu {
     width: 100%;
     position: fixed;
     left: 0;
-    background: #b42416;
+    background: white;
     flex-direction: column;
     top: 75px;
     height: 220px;

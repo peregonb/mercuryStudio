@@ -72,14 +72,14 @@ $(window).load(function () {
                 $('header').addClass('shrink');
                 $('li').addClass('white');
                 $('.brand-text').addClass('brand-text-e');
-                $('.hamburger .line').css("background-color", "white");
+                $('.hamburger .line').css("background-color", "black");
                 $('.header-menu').css("top", "60px");
 
             } else {
                 $('header').removeClass('shrink');
                 $('li').removeClass('white');
                 $('.brand-text').removeClass('brand-text-e');
-                $('.hamburger .line').css("background-color", "black");
+                $('.hamburger .line').css("background-color", "#b42416");
                 $('.header-menu').css("top", "75px");
             }
 
