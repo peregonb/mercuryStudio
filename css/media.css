@@ -177,11 +177,46 @@ border-left: 4px solid white;
 .second-bg-header {
     font-size: 48px;
 }
+.slick-prev, .slick-next {
+    top: 60px;
+    margin: 0 15px;
+    height: 45px;
+    width: 45px;
+}
+.slider-single > img {
+    margin: 0 auto;
+    height: 150px;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+.slider-description-str3 {
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    background-position-y: 5px;
+    margin: 0 15%;
+    text-align: center;
+}
 }
 
 
 /* Custom, iPhone Retina */
 
 @media only screen and (max-width: 320px) {
-    
+    .slider-description-str3 {
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    background-position-y: center;
+    background-position-x: 6px;
+    margin: 0 15%;
+    text-align: center;
+}
 }
