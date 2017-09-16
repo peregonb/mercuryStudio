@@ -80,7 +80,25 @@ border-left: 4px solid white;
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 767px) {
-
+.index-bg-header {
+    font-size: 65px;
+    line-height: 65px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #b42416;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.index-bg-decsription {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    width: 50%;
+    text-align: center;
+    margin-top: 15px;
+}
 }
 
 
