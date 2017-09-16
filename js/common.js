@@ -15,16 +15,27 @@ $(window).load(function () {
         setTimeout(function(){
             $('#preloader').fadeOut('slow', function () {
             });
-        },2000);
-
-
+        },0);
+        $('.slider-description-str2').hide();
+$('.slider-description-str1').click(function() {
+    $('.slider-description-str2').slideToggle({ top: 'toggle' });
+});
 
     $('.slider-main').slick({
         infinite: false,
         slidesToShow: 3,
         centerMode: true,
         dots: false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false
+      }
+    }
+  ]
     });
 
     function scrollbarWidth() {

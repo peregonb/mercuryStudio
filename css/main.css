@@ -78,6 +78,7 @@ header {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     user-select: none;
+    z-index: 999999999;
 }
 
 a {
@@ -350,16 +351,17 @@ a {
     cursor: pointer;
 }
 .second-bg {
-    height: 100vh;
+    min-height: 650px !important;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-image: url(../img/slider-elipsis.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 0px;
+    background-position-y: -60px;
     background-size: contain;
-    padding: 0;
+    padding: 60px 0;
 }
 .shrink > .container-header > .header-brand > .brand-text > span:nth-child(2){
     color: #111;
@@ -385,7 +387,6 @@ a {
 .slider-main {
     width: 100%;
     height: auto;
-    margin-top: 120px;
 }
 .slider-single > img {
     margin: 0 auto;
@@ -408,6 +409,7 @@ a {
 .slider-single{
     outline-style: none;
     outline: none;
+    text-align: center;
 }
 @charset 'UTF-8';
 /* Slider */
@@ -431,7 +433,7 @@ a {
     font-size: 0;
     line-height: 0;
     position: absolute;
-    top: 50%;
+    top: 200px;
     display: block;
     width: 60px;
     height: 60px;
@@ -745,4 +747,83 @@ a {
     align-items: center;
     -webkit-justify-content: center;
             justify-content: center;
+}
+.slider-header {
+    color: #3d3d3d;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+}
+.slider-description {
+    color: #3d3d3d;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.slider-price {
+    color: #3d3d3d;
+    font-family: "Open Sans";
+    line-height: 16px;
+}
+.number {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.slider-description-final {
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+}
+.slider-description-str1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    padding-left: 18px;
+    background-image: url(../img/chevb.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.slider-description-str2 {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.slider-description-str3 {
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 18px;
+    background-image: url(../img/chevb.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-decoration: underline;
+    cursor: pointer;
+    background-position-y: 5px;
+}
+.dis{
+    display: none;
+}
+.slider-single > #disapear{
+    display: none;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+.slick-center > #disapear{
+    display: block;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+.third-bg {
+    height: 100vh;
+    border-top: 2px solid #e4e4e4;
+    padding: 60px 0;
+    display: flex;
+    line-height: 60px;
+    justify-content: center;
 }
