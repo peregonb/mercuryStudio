@@ -1,0 +1,87 @@
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1199px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 991px) {
+    .hamburger {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-menu ul {
+        flex-direction: column;
+    }
+    .header-menu {
+width: 100%;
+    position: fixed;
+    left: 0;
+    background: #ff4202;
+    flex-direction: column;
+    top: 75px;
+    height: 220px;
+    z-index: 9999;
+    }
+    .header-menu li {
+        line-height: 35px;
+        color: white;
+        display: flex;
+        display: -webkit-flex;
+    justify-content: center;
+    width: 100%;
+    }
+.brand-text {
+    color: black;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
+}  
+
+
+.shrink .container-header .brand-text {
+    color: white;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
+}
+
+.header-menu>li:hover {
+border-bottom: 4px solid transparent;
+border-left: 4px solid white;
+    border-top: 5px double transparent;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
+}
+.shrink .container-header .header-menu>li:hover {
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid white;
+    border-top: 4px solid transparent;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
+}
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 767px) {
+
+}
+
+
+@media only screen and (max-width: 479px) {
+	
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    
+}
