@@ -18,6 +18,12 @@
     opacity: 1;
 }
 
+@font-face {
+    font-family: "i";
+    src: url("../fonts/i.ttf");
+    font-style: normal;
+}
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {}
 
@@ -25,14 +31,13 @@ body input:required:valid,
 body textarea:required:valid {}
 
 body {
-    font-family: "RobotoRegular", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -ms-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms;
-    user-select:none;
 }
 
 header {
@@ -44,7 +49,7 @@ header {
     color: #fff;
     z-index: 1000;
     padding: 10px 5px;
-    height: 75px;
+    height: auto;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     transition: 300ms;
@@ -91,7 +96,7 @@ a {
 }
 
 .header-brand {
-    width: 12.5%;
+    width: 10%;
     display: flex;
     display: -webkit-flex;
     align-items: center;
@@ -109,7 +114,7 @@ a {
 }
 
 .header-lang {
-    width: 12.5%;
+    width: 10%;
     display: flex;
     display: -webkit-flex;
     align-items: center;
@@ -118,22 +123,21 @@ a {
 
 .brand-text {
     color: white;
-    font-family: "Palatino Linotype";
+    font-family: "i";
     font-size: 28px;
-    font-weight: 700;
     line-height: 30px;
     height: 100%;
     display: flex;
     display: -webkit-flex;
     justify-content: flex-start;
     align-items: center;
-    font-style: italic;
     cursor: pointer;
-        -webkit-transition: 300ms;
-       -moz-transition: 300ms;
-        -ms-transition: 300ms;
-         -o-transition: 300ms;
-            transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    flex-direction: column;
 }
 
 .brand-text-e {
@@ -217,11 +221,11 @@ a {
 
 .hamburger .line {
     width: 35px;
-    height: 4px;
-    background-color: #000;
+    height: 2px;
+    background-color: #b42416;
     border-radius: 10px;
     display: block;
-    margin: 3px auto;
+    margin: 4px auto;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -237,4 +241,108 @@ a {
 
 
 /*END HEADER*/
-
+.index-bg {
+    min-height: 100vh;
+    height: auto;
+    background: url(../img/index-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.brand-red {
+    color: #b42416;
+}
+.brand-white {
+    color: white;
+}
+.brand-black {
+    color: #111;
+}
+.header-menu > li > a {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    line-height: 40px;
+    padding: 0 13px;
+        -webkit-transition: 300ms;
+       -moz-transition: 300ms;
+        -ms-transition: 300ms;
+         -o-transition: 300ms;
+            transition: 300ms;
+}
+.header-menu > li > a:hover {
+    color: #b42416;
+    background: url(../img/hoverl.svg) no-repeat 0% 0%,
+ url(../img/hoverr.svg) no-repeat 100% 100%;
+    background-size: 25px;
+    -webkit-transition: 300ms;
+       -moz-transition: 300ms;
+        -ms-transition: 300ms;
+         -o-transition: 300ms;
+            transition: 300ms;
+}
+.header-lang-tile {
+    background-color: rgba(180, 36, 22, 0.4);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-appearance: none;
+    padding: 7px 20px 5px 7px;
+    background-image: url(../img/chev_d.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 31px;
+    background-size: 25%;
+}
+.header-lang-tile:focus {
+    border: none;
+}
+.langOption{
+    background-color: #515050;
+    border: none;
+    outline: none;
+}
+.langOption:hover,
+.langOption:active,
+.langOption:hover
+{
+    background-color: #515050;
+    border: none;
+    outline: none;
+}
+.index-bg-header {
+    font-size: 75px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #b42416;
+}
+.index-bg-decsription {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    width: 46%;
+    text-align: center;
+}
+.index-bg-button {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    border: 3px solid #b42416;
+    border-radius: 1px;
+    padding: 13px 11px;
+    margin-top: 50px;
+}

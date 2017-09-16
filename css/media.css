@@ -17,15 +17,15 @@
         flex-direction: column;
     }
     .header-menu {
-width: 100%;
+    width: 100%;
     position: fixed;
     left: 0;
-    background: #ff4202;
+    background: #b42416;
     flex-direction: column;
     top: 75px;
     height: 220px;
     z-index: 9999;
-    }
+}
     .header-menu li {
         line-height: 35px;
         color: white;
@@ -35,7 +35,7 @@ width: 100%;
     width: 100%;
     }
 .brand-text {
-    color: black;
+    color: white;
     -webkit-transition: 150ms;
     -o-transition: 150ms;
     transition: 150ms;
@@ -65,6 +65,15 @@ border-left: 4px solid white;
     -o-transition: 150ms;
     transition: 150ms;
 }
+.header-lang {
+    width: auto;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
 }
 
 
@@ -76,7 +85,38 @@ border-left: 4px solid white;
 
 
 @media only screen and (max-width: 479px) {
-	
+	.index-bg-header {
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #b42416;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 45px;
+}
+.index-bg-decsription {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    width: 70%;
+    text-align: center;
+    margin-top: 15px;
+}
+.index-bg-button {
+    color: white;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    border: 3px solid #b42416;
+    border-radius: 1px;
+    padding: 12px 10px;
+    margin-top: 30px;
+}
+
 }
 
 
